@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,600;1,900&display=swap');
+
+:root
+{
+    --blue: #13505B;
+    --light-blue: #0C7489;
+    --dark: #040404;
+    --light: #119DA4;
+    --white: azure;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+  }
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.456)),
+      url("daeva-miles-zjasO1yZ6hQ-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    color: whitesmoke;
+  }
+
+
+  section
+  {
+      padding:2rem 9%;
+  }
+  
+  .header
+  {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem 9%;
+  }
+  
+  .header .logo
+  {
+      width: 45%;
+      height: auto;
+  }
+  
+  .navbar a
+  {
+      font-size: 1.55rem;
+      margin: 0 1.1rem;
+      color: var(--dark);
+  }
+  
+  .navbar a:hover
+  {
+      color: var(--light);
+  }
+  
+  .btn
+  {
+      display: inline-block;
+      margin-top: 1rem;
+      border-radius: .5rem;
+      background: var(--light-blue);
+      color: var(--dark);
+      font-weight: 500;
+      font-size: 1.7rem;
+      cursor: pointer;
+      padding: .8rem 3rem;
+  }
+  
+  .btn:hover
+  {
+      background: var(--dark);
+      color: var(--light-blue);
+  }
+  
+  .header .btn
+  {
+      margin-top: 0;
+  }
+  
+  .header #login i
+  {
+      font-size: 2.5rem;
+      color: var(--light);
+      cursor: pointer;
+      display: none;
+  }
+  
+  #menu
+  {
+      font-style: 2.5rem;
+      color: var(--light);
+      cursor: pointer;
+      display: none;
+  }
+  
+  ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  h2
+  {
+      font-size: 3rem;
+      padding:1rem 0;
+      color:var(--white);
+  }
+
+
+  .flexbox-body
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+  }
+
+  .form-login
+  {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+  }
+
+  header
+  {
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.input-field .input
+{
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+}
+
+.external
+{
+    font-size: medium;
+    color: var(--white);
+}
+
+.form-login i
+{
+    position: relative;
+    top: -30px;
+    left: 17px;
+    color: #fff;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.button{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: black;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s ;
+}
+.button:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+    background: var(--dark);
+    color: var(--white);
+}
+.two-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.one{
+    display: flex;
+}
+label a{
+    text-decoration: none;
+    color: #fff;
+}

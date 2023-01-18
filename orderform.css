@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,600;1,900&display=swap');
+
+:root
+{
+    --blue: #13505B;
+    --light-blue: #0C7489;
+    --dark: #040404;
+    --light: #119DA4;
+    --white: azure;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+  }
+
+body 
+{
+    background-color: var(--white);
+}
+
+.flexbox-body
+{
+    background-color: #D7D9CE;
+    width: 50%;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.flexbox-body h4
+{
+    padding-bottom: 5px;
+    color: var(--blue);
+}
+
+.form
+{
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 5px 0;
+}
+
+.inputfield
+{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: whitesmoke;
+    border: var(--border);
+    outline: none;
+    letter-spacing: 1px;
+    transition: .3s;
+    border-radius: 3px;
+    color: rgb(0, 26, 23);
+}
+
+.inputfield:last-child
+{
+    margin-right: 0;
+}
+
+.inputfield:focus
+{
+    -webkit-box-shadow: 0 0 2px 1px  #0C7489;
+    -moz-box-shadow: 0 0 2px 1px  #0C7489;
+    box-shadow: 0 0 2px 1px  #0C7489;
+    border: 1px solid #0C7489;;
+}
+.inputfield .icon
+{
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    color: rgb(0, 26, 23);
+    background-color: azure;
+    border-radius: 2px 0 0 2px;
+    transition: .3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: 1px solid #00000003;
+    border-right: none;
+}
+
+.inputfield:focus+.icon
+{
+    background-color: #0C7489;
+    color: white;
+    border: 1px solid #0C7489;
+    border: none;
+    transition: .8s;
+}
+
+.button
+{
+    width: 100%;
+    background-color: var(--light-blue);
+    color: var(--dark);
+    border: none;
+    padding: 15px;
+    border-right: 4px;
+    font-size: 16px;
+    transition: all .3s ease;
+    border-radius: 8px;
+}
+
+.button:hover
+{
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--white);
+}
